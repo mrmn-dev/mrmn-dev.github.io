@@ -1,81 +1,90 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-        <meta charset="utf-8" />
         <title>mrmn-dev</title>
-        <link rel="stylesheet" href="./theme/css/main.css" />
+        <meta charset="utf-8" />
+        <link rel="stylesheet" href="./theme/css/main.css" type="text/css" />
+        <link href="./" type="application/atom+xml" rel="alternate" title="mrmn-dev ATOM Feed" />
 
         <!--[if IE]>
-            <script src="https://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-        <![endif]-->
+                <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+
+        <!--[if lte IE 7]>
+                <link rel="stylesheet" type="text/css" media="all" href="./css/ie.css"/>
+                <script src="./js/IE8.js" type="text/javascript"></script><![endif]-->
+
+        <!--[if lt IE 7]>
+                <link rel="stylesheet" type="text/css" media="all" href="./css/ie6.css"/><![endif]-->
+
 </head>
 
-<body id="index" class="home">
-        <header id="banner" class="body">
-                <h1><a href="./">mrmn-dev </a></h1>
-                <nav><ul>
+<body>
+	<div id="wrap" style="width:850px">
+	    <div id="container" style="width:560px">
+
+
+            <div class="entry">
+        
+        
+
+            <header>
+            <h1><a href="." id="site-title">  </a>  <a href="./2019/miscellaneous-mq.html" id="page-title">Miscellaneous MQ</a></h1>
+<time datetime="2019-02-23T00:00:00-06:00">Sat 23 February 2019</time>            </header>
+
+            <article>
+                <h1>IBM MQ</h1>
+<hr>
+<p>IBM MQ is an Enterprise Integration product that supports application/platform integration via either the IBM MQ messaging API or JMS. There is a developer edition of the product that is available for download and installation. IBM MQ has evolved and changed over the years to support a broad range of application types.</p>
+<p>Using the IBM MQ installation documentation and rundeck community edition the steps required to install IBM MQ on Fedora were created.
+The rundeck directory was set up to see how one might use rundeck to support deploying and operating MQ. At this point have I have just set up some simple jobs and am exploring how rundeck may be used to manage environments at scale. More thoughts on this will be forthcoming. Until then, you can use the following link and import the jobs in the rundeck directoy into your own environment. <a href="https://github.com/mrmn-dev/miscMQ">Link to miscMQ github repository</a>.</p>
+<h2>Links</h2>
+<ul>
+<li><a href="https://www.rundeck.com/what-is-rundeck">What is rundeck?</a></li>
+<li><a href="https://www.ibm.com/support/knowledgecenter/en/SSFKSJ_9.1.0/com.ibm.mq.ins.doc/q008640_.htm">MQ Installation Instructions</a></li>
+<li><a href="https://developer.ibm.com/messaging/mq-downloads/">IBM MQ Developer Download</a></li>
+</ul>            </article>
+                <section id="article-list">
+                    <h2>All posts</h2>
+                    <ol>
+        </ol>
+        </section><!-- #article-list -->
+        
+
+ 
+            <li><a href="./2018/pelican-tips.html" rel="bookmark" title="Permalink to Pelican Tips">Pelican Tips</a></li>
+        </ol>
+        </section><!-- #article-list -->
+        
+
+ 
+            <li><a href="./2000/template.html" rel="bookmark" title="Permalink to Template">Template</a></li>
+        </ol>
+        </section><!-- #article-list -->
+            </div>
+        </div>
+
+
+        <div id="sidebar">
+            <h1><a href=". " title="title">mrmn-dev</a></h1>
+            <span class="description"> </span>
+            <!-- <span class="feed"><a href="">RSS</a> | <a href="">Atom</a></span> -->
+        </div>
+
+        <div id="footer">
+            <nav>
+                <ul>
                     <li><a href="./pages/about.html">About</a></li>
-                    <li><a href="./category/postcards.html">Postcards</a></li>
-                </ul></nav>
-        </header><!-- /#banner -->
+                </ul>
+            </nav>
 
-                <section id="content" class="body">
-                    <ol id="posts-list" class="hfeed" start="0">
-            <li><article class="hentry">
-                <header>
-                    <h1><a href="./2018/slight-delay.html" rel="bookmark"
-                           title="Permalink to Slight Delay">Slight Delay</a></h1>
-                </header>
+            <div id="credits">
+                <span>Adapted from <a href="http://wordpress.org/themes/monospace">Monospace</a> || Created with <a href="">Pelican</a></span>
+            </div>
+                
+        </div>
 
-                <div class="entry-content">
-<footer class="post-info">
-        <abbr class="published" title="2018-05-24T00:00:00-05:00">
-                Published: Thu 24 May 2018
-        </abbr>
 
-        <address class="vcard author">
-                By                         <a class="url fn" href="./author/mrmn-dev.html">mrmn-dev</a>
-        </address>
-<p>In <a href="./category/postcards.html">Postcards</a>.</p>
-
-</footer><!-- /.post-info -->                <p>So I haven't been here in a while and I clearly missed the mark with one of my goals. The goal I have missed is getting organized.</p>
-<p>So initially I put the github pages up easy peasy. However I didn't document how I did it. I didn't even save links …</p>
-                <a class="readmore" href="./2018/slight-delay.html">read more</a>
-                </div><!-- /.entry-content -->
-            </article></li>
-                </ol><!-- /#posts-list -->
-<p class="paginator">
-        <a href="./index2.html">&laquo;</a>
-    Page 3 / 3
-</p>
-                </section><!-- /#content -->
-        <section id="extras" class="body">
-                <div class="blogroll">
-                        <h2>links</h2>
-                        <ul>
-                            <li><a href="http://getpelican.com/">Pelican</a></li>
-                            <li><a href="http://python.org/">Python.org</a></li>
-                            <li><a href="http://jinja.pocoo.org/">Jinja2</a></li>
-                            <li><a href="https://news.ycombinator.com/">Hacker News</a></li>
-                        </ul>
-                </div><!-- /.blogroll -->
-                <div class="social">
-                        <h2>social</h2>
-                        <ul>
-
-                            <li><a href="https://twitter.com/FiveThirtyEight">FiveThirtyEight</a></li>
-                            <li><a href="https://twitter.com/d3js_org?lang=en">D3.js</a></li>
-                        </ul>
-                </div><!-- /.social -->
-        </section><!-- /#extras -->
-
-        <footer id="contentinfo" class="body">
-                <address id="about" class="vcard body">
-                Proudly powered by <a href="http://getpelican.com/">Pelican</a>, which takes great advantage of <a href="http://python.org">Python</a>.
-                </address><!-- /#about -->
-
-                <p>The theme is by <a href="http://coding.smashingmagazine.com/2009/08/04/designing-a-html-5-layout-from-scratch/">Smashing Magazine</a>, thanks!</p>
-        </footer><!-- /#contentinfo -->
+    </div>
 
 </body>
 </html>

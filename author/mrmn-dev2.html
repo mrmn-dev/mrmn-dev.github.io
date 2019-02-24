@@ -28,34 +28,30 @@
         
 
             <header>
-            <h1><a href=".." id="site-title">  </a>  <a href="../2018/pelican-tips.html" id="page-title">Pelican Tips</a></h1>
-<time datetime="2018-10-02T00:00:00-05:00">Tue 02 October 2018</time>            </header>
+            <h1><a href=".." id="site-title">  </a>  <a href="../2019/miscellaneous-mq.html" id="page-title">Miscellaneous MQ</a></h1>
+<time datetime="2019-02-23T00:00:00-06:00">Sat 23 February 2019</time>            </header>
 
             <article>
-                <h1>Pelican and github hosted site notes</h1>
+                <h1>IBM MQ</h1>
 <hr>
-<ul>
-<li><strong>Pelican</strong> is a static website genaration tool. <strong>Github</strong> is a version control web repository that allows you to host a website. See the links below to get set up. Below are just notes to myself for my wash, rinse and repeat process.  </li>
-<li>Place yourself in the github content directory. Start your editor.</li>
-<li>There are two directories within the content directory, <strong>blog</strong> and <strong>pages</strong>. We will mainly use <strong>blog</strong>.</li>
-<li>Copy template.md to your new file.</li>
-<li>Edit and add the content you want.</li>
-<li>Back up a directory and type <strong><em>make html</em></strong>.</li>
-<li>Type <strong><em>make serve</em></strong>, start a browser and link to host:8000.</li>
-<li>Once you are happy, <strong><em> <code>ghp-import -b master output</code> </em></strong>.</li>
-<li>Finally push to github, <strong><em> git push origin master </em></strong>. You will need your github id (email) and password.</li>
-</ul>
-<hr>
+<p>IBM MQ is an Enterprise Integration product that supports application/platform integration via either the IBM MQ messaging API or JMS. There is a developer edition of the product that is available for download and installation. IBM MQ has evolved and changed over the years to support a broad range of application types.</p>
+<p>Using the IBM MQ installation documentation and rundeck community edition the steps required to install IBM MQ on Fedora were created.
+The rundeck directory was set up to see how one might use rundeck to support deploying and operating MQ. At this point have I have just set up some simple jobs and am exploring how rundeck may be used to manage environments at scale. More thoughts on this will be forthcoming. Until then, you can use the following link and import the jobs in the rundeck directoy into your own environment. <a href="https://github.com/mrmn-dev/miscMQ">Link to miscMQ github repository</a>.</p>
 <h2>Links</h2>
 <ul>
-<li><a href="https://www.fullstackpython.com/blog/generating-static-websites-pelican-jinja2-markdown.html" title="Link">Creating github static website</a></li>
-<li><a href="https://www.entilzha.io/blog/2015/09/15/github-website-with-pelican/" title="Link">ghp-import and tips</a></li>
-<li><a href="https://github.com/getpelican/pelican/wiki/Tutorials" title="Link">Tutorials</a></li>
-<li><a href="http://anotherdatum.com/pelican-and-github-pages-workflow.html" title="Link">Workflow githooks</a></li>
+<li><a href="https://www.rundeck.com/what-is-rundeck">What is rundeck?</a></li>
+<li><a href="https://www.ibm.com/support/knowledgecenter/en/SSFKSJ_9.1.0/com.ibm.mq.ins.doc/q008640_.htm">MQ Installation Instructions</a></li>
+<li><a href="https://developer.ibm.com/messaging/mq-downloads/">IBM MQ Developer Download</a></li>
 </ul>            </article>
                 <section id="article-list">
                     <h2>All posts</h2>
                     <ol>
+        </ol>
+        </section><!-- #article-list -->
+        
+
+ 
+            <li><a href="../2018/pelican-tips.html" rel="bookmark" title="Permalink to Pelican Tips">Pelican Tips</a></li>
         </ol>
         </section><!-- #article-list -->
         
