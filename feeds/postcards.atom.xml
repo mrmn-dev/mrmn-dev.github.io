@@ -8,8 +8,6 @@
 &lt;p&gt;Covid-19 and two or three entertaining reads between cobol students and experts in various cobol forums. Dug out some old notes and pushed to github.  &lt;/p&gt;
 &lt;h2&gt;Why Not?&lt;/h2&gt;
 &lt;p&gt;Well there is that one thing, followed by another that points forward and back. That seems like enough reasons for not.&lt;/p&gt;
-&lt;p&gt;The links to the mainframe forum discussion threads are below. Suffice it to say learning cobol by coding linked list routines must be a unique undertaking.
-I would advise one to figure it out and perhaps not ask for help, help may be confusing. Since you are coming here, and sort of cheating. Maybe you should move on to a red-black tree.&lt;/p&gt;
 &lt;h2&gt;Links&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href="http://www.ibmmainframeforum.com/ibm-cobol/topic9016.html"&gt;Forum: Link what?&lt;/a&gt;&lt;/li&gt;
@@ -17,11 +15,15 @@ I would advise one to figure it out and perhaps not ask for help, help may be co
 &lt;li&gt;&lt;a href="http://ibmmainframes.com/post-78602.html"&gt;Forum: Are we getting somewhere, or are we too old? Ask Sample.&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="https://www.ibm.com/support/knowledgecenter/SSLTBW_2.2.0/com.ibm.zos.v2r2.ceea200/cobbls.htm"&gt;IBM: Simple Linked List, Not bad but not a double.&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="https://www.thecodingdelight.com/doubly-linked-list/"&gt;VISUAL: Is this right?&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://github.com/mrmn-dev/cobol/blob/main/DLLSUBX.CBL"&gt;DLLSUBX.CBL&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://github.com/mrmn-dev/cobol/blob/main/DLLMAIN.CBL"&gt;DLLMAIN.CBL&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://github.com/mrmn-dev/cobol/blob/main/DLLPARM.CPY"&gt;DLLPARM.CPY&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://github.com/mrmn-dev/cobol"&gt;cobol&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;</content></entry><entry><title>Miscellaneous MQ</title><link href="/2019/miscellaneous-mq.html" rel="alternate"></link><published>2019-02-23T00:00:00-06:00</published><updated>2019-02-23T00:00:00-06:00</updated><author><name>mrmn-dev</name></author><id>tag:None,2019-02-23:/2019/miscellaneous-mq.html</id><summary type="html">&lt;h1&gt;IBM MQ&lt;/h1&gt;
+&lt;li&gt;&lt;a href="https://github.com/mrmn-dev/cobol/blob/main/DLLSUBX.CBL"&gt;EXAMPLE: DLLSUBX.CBL&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/mrmn-dev/cobol/blob/main/DLLMAIN.CBL"&gt;EXAMPLE: DLLMAIN.CBL&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/mrmn-dev/cobol/blob/main/DLLPARM.CPY"&gt;EXAMPLE: DLLPARM.CPY&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/mrmn-dev/cobol"&gt;REPO: cobol&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Conclusion&lt;/h2&gt;
+&lt;p&gt;After reading some of the forum information above you may be confused. Suffice it to say learning cobol by coding linked list routines must be a unique undertaking.
+It may be best to figure out linked lists on your own and perhaps not ask for help.
+If you found any of this really helpful and you feel like you've cheated on an assignment, maybe you should move on to a red-black tree.&lt;/p&gt;</content></entry><entry><title>Miscellaneous MQ</title><link href="/2019/miscellaneous-mq.html" rel="alternate"></link><published>2019-02-23T00:00:00-06:00</published><updated>2019-02-23T00:00:00-06:00</updated><author><name>mrmn-dev</name></author><id>tag:None,2019-02-23:/2019/miscellaneous-mq.html</id><summary type="html">&lt;h1&gt;IBM MQ&lt;/h1&gt;
 &lt;hr&gt;
 &lt;p&gt;IBM MQ is an Enterprise Integration product that supports application/platform integration via either the IBM MQ messaging API or JMS. There is a developer edition of the product that is available for download and installation. IBM MQ has evolved and changed over the years to support a …&lt;/p&gt;</summary><content type="html">&lt;h1&gt;IBM MQ&lt;/h1&gt;
 &lt;hr&gt;
