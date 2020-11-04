@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>mrmn-dev</title><link href="/" rel="alternate"></link><link href="/feeds/all.atom.xml" rel="self"></link><id>/</id><updated>2020-11-01T00:00:00-05:00</updated><entry><title>Cobol Linked List example for mainframe.</title><link href="/2020/cobol-linked-list-example-for-mainframe.html" rel="alternate"></link><published>2020-11-01T00:00:00-05:00</published><updated>2020-11-01T00:00:00-05:00</updated><author><name>mrmn-dev</name></author><id>tag:None,2020-11-01:/2020/cobol-linked-list-example-for-mainframe.html</id><summary type="html">&lt;h1&gt;COBOL Double Linked List Example.&lt;/h1&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>mrmn-dev</title><link href="https://mrmn-dev.github.io/" rel="alternate"></link><link href="https://mrmn-dev.github.io/feeds/all.atom.xml" rel="self"></link><id>https://mrmn-dev.github.io/</id><updated>2020-11-01T00:00:00-05:00</updated><entry><title>Cobol Linked List example for mainframe.</title><link href="https://mrmn-dev.github.io/2020/cobol-linked-list-example-for-mainframe.html" rel="alternate"></link><published>2020-11-01T00:00:00-05:00</published><updated>2020-11-01T00:00:00-05:00</updated><author><name>mrmn-dev</name></author><id>tag:mrmn-dev.github.io,2020-11-01:/2020/cobol-linked-list-example-for-mainframe.html</id><summary type="html">&lt;h1&gt;COBOL Double Linked List Example.&lt;/h1&gt;
 &lt;h2&gt;Why?&lt;/h2&gt;
 &lt;p&gt;Covid-19 and two or three entertaining reads between cobol students and experts in various cobol forums. Dug out some old notes and pushed to github.  &lt;/p&gt;
 &lt;h2&gt;Why Not?&lt;/h2&gt;
@@ -12,8 +12,8 @@
 &lt;ul&gt;
 &lt;li&gt;&lt;a href="http://www.ibmmainframeforum.com/ibm-cobol/topic9016.html"&gt;Forum: Link what?&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="http://computer-programming-forum.com/48-cobol/7662794b63fac8a4.htm"&gt;Forum: Into the Abyss.&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="http://ibmmainframes.com/post-78602.html"&gt;Forum: Are we getting somewhere, or are we too old? Ask Sample.&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://www.ibm.com/support/knowledgecenter/SSLTBW_2.2.0/com.ibm.zos.v2r2.ceea200/cobbls.htm"&gt;IBM: Simple Linked List, Not bad but not a double.&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://ibmmainframes.com/post-78602.html"&gt;Forum: Out of te Abyss and into some sample code?&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.ibm.com/support/knowledgecenter/SSLTBW_2.2.0/com.ibm.zos.v2r2.ceea200/cobbls.htm"&gt;IBM: Simple Linked List, Not bad but not a double linked list.&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="https://www.thecodingdelight.com/doubly-linked-list/"&gt;VISUAL: Is this right?&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="https://github.com/mrmn-dev/cobol/blob/main/DLLSUBX.CBL"&gt;EXAMPLE: DLLSUBX.CBL&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="https://github.com/mrmn-dev/cobol/blob/main/DLLMAIN.CBL"&gt;EXAMPLE: DLLMAIN.CBL&lt;/a&gt;&lt;/li&gt;
@@ -23,19 +23,22 @@
 &lt;h2&gt;Conclusion&lt;/h2&gt;
 &lt;p&gt;After reading some of the forum information above you may be confused. Suffice it to say learning cobol by coding linked list routines must be a unique undertaking.
 It may be best to figure out linked lists on your own and perhaps not ask for help.
-If you found any of this really helpful and you feel like you've cheated on an assignment, maybe you should move on to a red-black tree.&lt;/p&gt;</content></entry><entry><title>Miscellaneous MQ</title><link href="/2019/miscellaneous-mq.html" rel="alternate"></link><published>2019-02-23T00:00:00-06:00</published><updated>2019-02-23T00:00:00-06:00</updated><author><name>mrmn-dev</name></author><id>tag:None,2019-02-23:/2019/miscellaneous-mq.html</id><summary type="html">&lt;h1&gt;IBM MQ&lt;/h1&gt;
+If you found any of this really helpful and you feel like you've cheated on an assignment, maybe you should move on to a red-black tree.&lt;/p&gt;</content></entry><entry><title>Rundeck and MQ</title><link href="https://mrmn-dev.github.io/2019/rundeck-and-mq.html" rel="alternate"></link><published>2019-02-23T00:00:00-06:00</published><updated>2019-02-23T00:00:00-06:00</updated><author><name>mrmn-dev</name></author><id>tag:mrmn-dev.github.io,2019-02-23:/2019/rundeck-and-mq.html</id><summary type="html">&lt;h1&gt;IBM MQ&lt;/h1&gt;
 &lt;hr&gt;
 &lt;p&gt;IBM MQ is an Enterprise Integration product that supports application/platform integration via either the IBM MQ messaging API or JMS. There is a developer edition of the product that is available for download and installation. IBM MQ has evolved and changed over the years to support a …&lt;/p&gt;</summary><content type="html">&lt;h1&gt;IBM MQ&lt;/h1&gt;
 &lt;hr&gt;
 &lt;p&gt;IBM MQ is an Enterprise Integration product that supports application/platform integration via either the IBM MQ messaging API or JMS. There is a developer edition of the product that is available for download and installation. IBM MQ has evolved and changed over the years to support a broad range of application types.&lt;/p&gt;
 &lt;p&gt;Using the IBM MQ installation documentation and rundeck community edition, the steps required to install IBM MQ on Fedora were created.
-The rundeck directory was set up to see how one might use rundeck to support deploying and operating MQ. At this point have I have just set up some simple jobs to explore how rundeck may be used to manage environments at scale. You can use the following link and import the jobs in the rundeck directoy into your own environment. &lt;a href="https://github.com/mrmn-dev/miscMQ"&gt;Link to miscMQ github repository&lt;/a&gt;.&lt;/p&gt;
+The rundeck directory was set up to see how one might use rundeck to support deploying and operating MQ. 
+At this point have I have just set up some simple jobs to explore how rundeck may be used to manage environments at scale. 
+You can use the link below and import the jobs in the rundeck directoy into your own environment. &lt;/p&gt;
 &lt;h2&gt;Links&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href="https://www.rundeck.com/what-is-rundeck"&gt;What is rundeck?&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="https://www.ibm.com/support/knowledgecenter/en/SSFKSJ_9.1.0/com.ibm.mq.ins.doc/q008640_.htm"&gt;MQ Installation Instructions&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="https://developer.ibm.com/messaging/mq-downloads/"&gt;IBM MQ Developer Download&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;</content></entry><entry><title>Pelican Tips</title><link href="/2018/pelican-tips.html" rel="alternate"></link><published>2018-10-02T00:00:00-05:00</published><updated>2018-10-02T00:00:00-05:00</updated><author><name>mrmn-dev</name></author><id>tag:None,2018-10-02:/2018/pelican-tips.html</id><summary type="html">&lt;h1&gt;Pelican and github hosted site notes&lt;/h1&gt;
+&lt;li&gt;&lt;a href="https://github.com/mrmn-dev/miscMQ/tree/master/rundeck"&gt;Rundeck artifacts in github repository&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content></entry><entry><title>Pelican Tips</title><link href="https://mrmn-dev.github.io/2018/pelican-tips.html" rel="alternate"></link><published>2018-10-02T00:00:00-05:00</published><updated>2018-10-02T00:00:00-05:00</updated><author><name>mrmn-dev</name></author><id>tag:mrmn-dev.github.io,2018-10-02:/2018/pelican-tips.html</id><summary type="html">&lt;h1&gt;Pelican and github hosted site notes&lt;/h1&gt;
 &lt;hr&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;Pelican&lt;/strong&gt; is a static website genaration tool. &lt;strong&gt;Github&lt;/strong&gt; is a version control web repository that allows you to host a website. See the links below to get set up. Below are just notes to myself for my wash, rinse and repeat process.  &lt;/li&gt;
@@ -60,7 +63,7 @@ The rundeck directory was set up to see how one might use rundeck to support dep
 &lt;li&gt;&lt;a href="https://www.entilzha.io/blog/2015/09/15/github-website-with-pelican/" title="Link"&gt;ghp-import and tips&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="https://github.com/getpelican/pelican/wiki/Tutorials" title="Link"&gt;Tutorials&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="http://anotherdatum.com/pelican-and-github-pages-workflow.html" title="Link"&gt;Workflow githooks&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;</content></entry><entry><title>Template</title><link href="/2000/template.html" rel="alternate"></link><published>2000-01-01T00:00:00-06:00</published><updated>2000-01-01T00:00:00-06:00</updated><author><name>mrmn-dev</name></author><id>tag:None,2000-01-01:/2000/template.html</id><summary type="html">&lt;h1&gt;One&lt;/h1&gt;
+&lt;/ul&gt;</content></entry><entry><title>Template</title><link href="https://mrmn-dev.github.io/2000/template.html" rel="alternate"></link><published>2000-01-01T00:00:00-06:00</published><updated>2000-01-01T00:00:00-06:00</updated><author><name>mrmn-dev</name></author><id>tag:mrmn-dev.github.io,2000-01-01:/2000/template.html</id><summary type="html">&lt;h1&gt;One&lt;/h1&gt;
 &lt;h2&gt;Two&lt;/h2&gt;
 &lt;h3&gt;Three&lt;/h3&gt;
 &lt;hr&gt;
