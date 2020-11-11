@@ -30,17 +30,24 @@
 
 
 
-    <meta name="author" content="MRMN" />
-    <meta name="description" content="" />
+<meta name="author" content="MRMN" />
+<meta name="description" content="Pelican and github hosted site notes Pelican is a static website genaration tool. Github is a version control web repository that allows you to host a website. See the links below to get set up. Below are just notes to myself for my wash, rinse and repeat process. Place yourself …" />
+<meta name="keywords" content="">
+
+
 <meta property="og:site_name" content="A Pelican Blog"/>
-<meta property="og:type" content="blog"/>
-<meta property="og:title" content="A Pelican Blog"/>
-<meta property="og:description" content=""/>
+<meta property="og:title" content="Pelican Tips"/>
+<meta property="og:description" content="Pelican and github hosted site notes Pelican is a static website genaration tool. Github is a version control web repository that allows you to host a website. See the links below to get set up. Below are just notes to myself for my wash, rinse and repeat process. Place yourself …"/>
 <meta property="og:locale" content="en_US"/>
-<meta property="og:url" content="https://mrmn-dev.github.io"/>
+<meta property="og:url" content="https://mrmn-dev.github.io/2018/10/pelican-tips/"/>
+<meta property="og:type" content="article"/>
+<meta property="article:published_time" content="2018-10-02 00:00:00+00:00"/>
+<meta property="article:modified_time" content=""/>
+<meta property="article:author" content="https://mrmn-dev.github.io/author/mrmn.html">
+<meta property="article:section" content="Pelican"/>
 <meta property="og:image" content="/images/profile.jpg">
 
-  <title>A Pelican Blog &ndash; Archives</title>
+  <title>A Pelican Blog &ndash; Pelican Tips</title>
 
 </head>
 <body class="light-theme">
@@ -99,28 +106,47 @@
 
 <article class="single">
   <header>
-    <h1 id="archives">Archives</h1>
+      
+    <h1 id="pelican-tips">Pelican Tips</h1>
+    <p>
+      Posted on Tue 02 October 2018 in <a href="https://mrmn-dev.github.io/category/pelican.html">Pelican</a>
+
+    </p>
   </header>
+
+
   <div>
-    <dl>
-
-          <dt>Sun 01 November 2020</dt>
-
-        <dd>
-          <a href="https://mrmn-dev.github.io/2020/11/cobol-doubly-linked-list/">Cobol doubly linked list</a>
-        </dd>
-          <dt>Sat 23 February 2019</dt>
-
-        <dd>
-          <a href="https://mrmn-dev.github.io/2019/02/rundeck-and-mq/">Rundeck and MQ</a>
-        </dd>
-          <dt>Tue 02 October 2018</dt>
-
-        <dd>
-          <a href="https://mrmn-dev.github.io/2018/10/pelican-tips/">Pelican Tips</a>
-        </dd>
-    </dl>
+    <h1>Pelican and github hosted site notes</h1>
+<hr>
+<ul>
+<li><strong>Pelican</strong> is a static website genaration tool. <strong>Github</strong> is a version control web repository that allows you to host a website. See the links below to get set up. Below are just notes to myself for my wash, rinse and repeat process.  </li>
+<li>Place yourself in the github content directory. Start your editor.</li>
+<li>There are two directories within the content directory, <strong>blog</strong> and <strong>pages</strong>. We will mainly use <strong>blog</strong>.</li>
+<li>Copy template.md to your new file.</li>
+<li>Edit and add the content you want.</li>
+<li>Back up a directory and type <strong><em>make html</em></strong>.</li>
+<li>Type <strong><em>make serve</em></strong>, start a browser and link to host:8000.</li>
+<li>Once you are happy, <strong><em> ghp-import -b master output </em></strong> </li>
+<li>Finally push to github, <strong><em> git push origin master </em></strong>. You will need your github id (email) and password.</li>
+</ul>
+<hr>
+<h2>Links</h2>
+<ul>
+<li><a href="https://www.fullstackpython.com/blog/generating-static-websites-pelican-jinja2-markdown.html" title="Link">Creating github static website</a></li>
+<li><a href="https://www.entilzha.io/blog/2015/09/15/github-website-with-pelican/" title="Link">ghp-import and tips</a></li>
+<li><a href="https://github.com/getpelican/pelican/wiki/Tutorials" title="Link">Tutorials</a></li>
+<li><a href="http://anotherdatum.com/pelican-and-github-pages-workflow.html" title="Link">Workflow githooks</a></li>
+</ul>
   </div>
+  <div class="tag-cloud">
+    <p>
+    </p>
+  </div>
+
+
+
+
+
 </article>
 
     <footer>
