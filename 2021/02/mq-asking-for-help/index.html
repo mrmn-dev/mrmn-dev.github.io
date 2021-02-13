@@ -1,0 +1,212 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="HandheldFriendly" content="True" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="" />
+
+  <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,400;0,700;1,400&family=Source+Sans+Pro:ital,wght@0,300;0,400;0,700;1,400&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="http://gitfedora:8000/theme/stylesheet/style.min.css">
+
+
+    <link id="pygments-light-theme" rel="stylesheet" type="text/css"
+          href="http://gitfedora:8000/theme/pygments/friendly.min.css">
+
+
+  <link rel="stylesheet" type="text/css" href="http://gitfedora:8000/theme/font-awesome/css/fontawesome.css">
+  <link rel="stylesheet" type="text/css" href="http://gitfedora:8000/theme/font-awesome/css/brands.css">
+  <link rel="stylesheet" type="text/css" href="http://gitfedora:8000/theme/font-awesome/css/solid.css">
+
+
+    <link href="http://gitfedora:8000/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="A Pelican Blog Atom">
+
+
+    <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="/images/favicon.ico" type="image/x-icon">
+
+
+
+<meta name="author" content="MRMN" />
+<meta name="description" content="MQ messaging application trouble shooting: Asking for help. Whether you are new to IBM MQ or new to the application you are supporting, this discussion is intended to help give you the foundation to reach out for help in the cases where you need it. This information is targeted at …" />
+<meta name="keywords" content="">
+
+
+<meta property="og:site_name" content="A Pelican Blog"/>
+<meta property="og:title" content="MQ: Asking for help."/>
+<meta property="og:description" content="MQ messaging application trouble shooting: Asking for help. Whether you are new to IBM MQ or new to the application you are supporting, this discussion is intended to help give you the foundation to reach out for help in the cases where you need it. This information is targeted at …"/>
+<meta property="og:locale" content="en_US"/>
+<meta property="og:url" content="http://gitfedora:8000/2021/02/mq-asking-for-help/"/>
+<meta property="og:type" content="article"/>
+<meta property="article:published_time" content="2021-02-13 00:00:00+00:00"/>
+<meta property="article:modified_time" content=""/>
+<meta property="article:author" content="http://gitfedora:8000/author/mrmn.html">
+<meta property="article:section" content="MQ"/>
+<meta property="og:image" content="/images/profile.jpg">
+
+  <title>A Pelican Blog &ndash; MQ: Asking for help.</title>
+
+</head>
+<body class="light-theme">
+  <aside>
+    <div>
+      <a href="http://gitfedora:8000">
+        <img src="/images/profile.jpg" alt="Minimal Recursion" title="Minimal Recursion">
+      </a>
+
+      <h1>
+        <a href="http://gitfedora:8000">Minimal Recursion</a>
+      </h1>
+
+<p>Random bits and bytes</p>
+
+      <nav>
+        <ul class="list">
+
+
+              <li>
+                <a target="_self"
+                   href="http://gitfedora:8000/about/#about">
+                  About
+                </a>
+              </li>
+
+        </ul>
+      </nav>
+
+      <ul class="social">
+          <li>
+            <a  class="sc-github" href="https://github.com/mrmn-dev" target="_blank">
+              <i class="fab fa-github"></i>
+            </a>
+          </li>
+          <li>
+            <a  class="sc-envelope" href="mailto:mrmn@protonmail.com" target="_blank">
+              <i class="fas fa-envelope"></i>
+            </a>
+          </li>
+      </ul>
+    </div>
+
+  </aside>
+  <main>
+
+    <nav>
+      <a href="http://gitfedora:8000">Home</a>
+
+      <a href="/archives">Archives</a>
+      <a href="/categories">Categories</a>
+
+      <a href="http://gitfedora:8000/feeds/all.atom.xml">Atom</a>
+
+    </nav>
+
+<article class="single">
+  <header>
+      
+    <h1 id="mq-asking-for-help">MQ: Asking for help.</h1>
+    <p>
+      Posted on Sat 13 February 2021 in <a href="http://gitfedora:8000/category/mq.html">MQ</a>
+
+    </p>
+  </header>
+
+
+  <div>
+    <h1>MQ messaging application trouble shooting: Asking for help.</h1>
+<p>Whether you are new to IBM MQ or new to the application you are supporting, this discussion is intended to help give you the foundation to reach
+out for help in the cases where you need it. This information is targeted at those who are new at supporting an application that uses MQ.</p>
+<p>Every now and then in your career as a developer you may have to support an application that uses IBM MQ to communicate with other applications.
+Most likely the reason this application has come to your attention is that perhaps it is having an issue of some sort. These issues 
+at first are usually categorized into some over simplified group and then upon looking into more detail they fall into some other
+common categories.</p>
+<p>The purpose of these notes are to give you some language/tools to discuss the issue with support professionals that work with IBM MQ.<br>
+You may encounter a variety or experience levels and in some cases you will need to bring in a number of groups to get to the 
+bottom of the performance issue. Hopefully these notes will help you get to the resolution more quickly.</p>
+<h2>Problem Categorization and category evolution:</h2>
+<p>The problem usually starts out as <em><strong>"We have a MQ problem"</strong></em>. Upon further discussion it usually falls into one of these 
+Categories:</p>
+<ol>
+<li>Lost message.
+<em>-&gt;Not really lost, just not where it was expected.</em></li>
+<li>Not getting a response.
+<em>-&gt;Messaging servicing application had a problem with the request.</em></li>
+<li>Not getting a response on-time.
+<em>-&gt;Everything appears to work, just not fast enough. These issues can be challenging.</em></li>
+</ol>
+<h2>Helpful information to gather prior to contacting MQ Team:</h2>
+<p>Calling in the MQ team and saying <em><strong>"we have a MQ problem"</strong></em> and having no additional information may not get you very far. <em><strong>If you need help you have
+to ask, so reaching out for help is encouraged</strong></em>. The first time you do this may not go as well as you hope, but with knowledge and experience trouble
+shooting will become easier. </p>
+<p>It is understood that an application support person may not always know all the details of what infrastructure is being used. Perhaps these
+details are buried under ten layers of abstraction or in any number of configuration files. You could be new to the application. 
+The application deployment group could be seperate from the support group. Any number of reasons could contribute to this lack of information.
+At some point these details will likely be needed. It would be good to know how to qet these details if you are going to be supporting the application. </p>
+<h3>What information to have prior to contacting the MQ group?</h3>
+<ol>
+<li><strong>Hostname and TCP/IP port.</strong></li>
+<li><strong>queue manager and queue name(s).</strong></li>
+<li><strong>Time the problem was first noted.</strong></li>
+</ol>
+<p>In some cases host name and port would not be used if you use local bindings. In which case queue manager name and queue will be 
+all you have. Local bindings is not that common, if you use them your application and the MQ you connect to would reside on the same host. 
+If you have contacts for the team that supports the application that services your message that can prove very helplful.</p>
+<h3>Is there anything I can ask of the MQ support group if I don't know the Hostname, port, queue manager and queue?</h3>
+<p>There are questions you can ask that may be revealing, however even if this information can be provide by the MQ support group it
+may not be conclusive.</p>
+<h3>Questions to ask MQ support when you don't know underlying MQ infrastructure that supports your application:</h3>
+<ol>
+<li><strong>Are any queue managers down?</strong></li>
+<li><strong>Are there messages on dead-letter queues?</strong></li>
+<li><strong>Are there messages on transmit queues?</strong></li>
+</ol>
+<p>If messages started building up on either transmit or dead letter queues at the same time that the application started 
+having issues this may be a good indicator that these events are related.</p>
+<h2>Something to consider:</h2>
+<p>One thing to note about this is that if queue managers are down for maintenance/patching or if there are transmit queue backups 
+this doesn't mean that your application is affected by this. If the problem goes away after the queue manager is back active or 
+the transmit queues clear, that may be a good indicator it was related, but without knowing what infrastructure your 
+application uses, you won't know for certain.</p>
+<p>Once the MQ environment is back to a fully operational status, issues can clear up. If your issue is resolved without you ever determining the
+details of what infrastructure you use, it would still be wise to learn the details.  If you need an environment that is operational 
+during patching/maintenance windows there are ways to accomodate this requirement from a MQ configuration perspective. The backend application servicing
+the MQ message may have requirements beyond a HA(Highly Available) MQ configuration.</p>
+  </div>
+  <div class="tag-cloud">
+    <p>
+    </p>
+  </div>
+
+
+
+
+
+</article>
+
+    <footer>
+<p>&copy;  </p>
+<p>
+Built with <a href="http://getpelican.com" target="_blank">Pelican</a> using <a href="http://bit.ly/flex-pelican" target="_blank">Flex</a> theme
+</p>    </footer>
+  </main>
+
+
+
+
+<script type="application/ld+json">
+{
+  "@context" : "http://schema.org",
+  "@type" : "Blog",
+  "name": " A Pelican Blog ",
+  "url" : "http://gitfedora:8000",
+  "image": "/images/profile.jpg",
+  "description": ""
+}
+</script>
+
+
+</body>
+</html>
