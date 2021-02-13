@@ -4,98 +4,98 @@ xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitem
 xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
-<loc>http://gitfedora:8000/</loc>
-<lastmod>2021-02-13T12:09:26-00:00</lastmod>
+<loc>https://mrmn-dev.github.io/</loc>
+<lastmod>2021-02-13T12:22:01-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.6</priority>
 </url>
 
 <url>
-<loc>http://gitfedora:8000/tags.html</loc>
-<lastmod>2021-02-13T12:09:26-00:00</lastmod>
+<loc>https://mrmn-dev.github.io/tags.html</loc>
+<lastmod>2021-02-13T12:22:01-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.6</priority>
 </url>
 
 <url>
-<loc>http://gitfedora:8000/categories.html</loc>
-<lastmod>2021-02-13T12:09:26-00:00</lastmod>
+<loc>https://mrmn-dev.github.io/categories.html</loc>
+<lastmod>2021-02-13T12:22:01-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.6</priority>
 </url>
 
 <url>
-<loc>http://gitfedora:8000/authors.html</loc>
-<lastmod>2021-02-13T12:09:26-00:00</lastmod>
+<loc>https://mrmn-dev.github.io/authors.html</loc>
+<lastmod>2021-02-13T12:22:01-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.6</priority>
 </url>
 
 <url>
-<loc>http://gitfedora:8000/archives.html</loc>
-<lastmod>2021-02-13T12:09:26-00:00</lastmod>
+<loc>https://mrmn-dev.github.io/archives.html</loc>
+<lastmod>2021-02-13T12:22:01-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.6</priority>
 </url>
 
 <url>
-<loc>http://gitfedora:8000/about/</loc>
+<loc>https://mrmn-dev.github.io/about/</loc>
 <lastmod>2018-03-15T00:00:00+00:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>http://gitfedora:8000/2021/02/mq-asking-for-help/</loc>
+<loc>https://mrmn-dev.github.io/2021/02/mq-asking-for-help/</loc>
 <lastmod>2021-02-13T00:00:00+00:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.6</priority>
 </url>
 
 <url>
-<loc>http://gitfedora:8000/2020/11/cobol-doubly-linked-list/</loc>
+<loc>https://mrmn-dev.github.io/2020/11/cobol-doubly-linked-list/</loc>
 <lastmod>2020-11-01T00:00:00+00:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.6</priority>
 </url>
 
 <url>
-<loc>http://gitfedora:8000/2019/02/rundeck-and-mq/</loc>
+<loc>https://mrmn-dev.github.io/2019/02/rundeck-and-mq/</loc>
 <lastmod>2019-02-23T00:00:00+00:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.6</priority>
 </url>
 
 <url>
-<loc>http://gitfedora:8000/2018/10/pelican-tips/</loc>
+<loc>https://mrmn-dev.github.io/2018/10/pelican-tips/</loc>
 <lastmod>2018-10-02T00:00:00+00:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.6</priority>
 </url>
 
 <url>
-<loc>http://gitfedora:8000/category/cobol.html</loc>
+<loc>https://mrmn-dev.github.io/category/cobol.html</loc>
 <lastmod>2020-11-01T00:00:00+00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.6</priority>
 </url>
 
 <url>
-<loc>http://gitfedora:8000/category/mq.html</loc>
+<loc>https://mrmn-dev.github.io/category/mq.html</loc>
 <lastmod>2021-02-13T00:00:00+00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.6</priority>
 </url>
 
 <url>
-<loc>http://gitfedora:8000/category/pelican.html</loc>
+<loc>https://mrmn-dev.github.io/category/pelican.html</loc>
 <lastmod>2018-10-02T00:00:00+00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.6</priority>
 </url>
 
 <url>
-<loc>http://gitfedora:8000/author/mrmn.html</loc>
+<loc>https://mrmn-dev.github.io/author/mrmn.html</loc>
 <lastmod>2021-02-13T00:00:00+00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.6</priority>
