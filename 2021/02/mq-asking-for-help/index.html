@@ -120,42 +120,55 @@
 <p>Whether you are new to IBM MQ or new to the application you are supporting, this discussion is intended to help give you the foundation to reach
 out for help in the cases where you need it. This information is targeted at those who are new at supporting an application that uses MQ.</p>
 <p>Every now and then in your career as a developer you may have to support an application that uses IBM MQ to communicate with other applications.
-Most likely the reason this application has come to your attention is that perhaps it is having an issue of some sort. These issues 
-at first are usually categorized into some over simplified group and then upon looking into more detail they fall into some other
-common categories.</p>
+Most likely the reason this application has come to your attention is that perhaps it is having an issue of some sort. Depending upon what tools 
+and access you have at your disposal, you may need to reach out for assistance.</p>
 <p>The purpose of these notes are to give you some language/tools to discuss the issue with support professionals that work with IBM MQ.<br>
 You may encounter a variety or experience levels and in some cases you will need to bring in a number of groups to get to the 
 bottom of the performance issue. Hopefully these notes will help you get to the resolution more quickly.</p>
 <h2>Problem Categorization and category evolution:</h2>
-<p>The problem usually starts out as <em><strong>"We have a MQ problem"</strong></em>. Upon further discussion it usually falls into one of these 
-Categories:</p>
+<p>The problem usually starts out as <em><strong>"We have a MQ problem"</strong></em>. If this issue came to your attention by monitoring of MQ reason codes or application
+logs you likely have a fairly good idea of the issue. If the issue was brought to your attention by a complaint from the business community, you may 
+not know where the issue lies. As you look into the issue, you may start to have an inclination that the issue is related to MQ. These are common
+observations that are made.</p>
 <ol>
 <li>Lost message.
 <em>-&gt;Not really lost, just not where it was expected.</em></li>
 <li>Not getting a response.
-<em>-&gt;Messaging servicing application had a problem with the request.</em></li>
+<em>-&gt;Messaging servicing application had a problem with the request. What group supports this application?</em></li>
 <li>Not getting a response on-time.
 <em>-&gt;Everything appears to work, just not fast enough. These issues can be challenging.</em></li>
 </ol>
-<h2>Helpful information to gather prior to contacting MQ Team:</h2>
-<p>Calling in the MQ team and saying <em><strong>"we have a MQ problem"</strong></em> and having no additional information may not get you very far. <em><strong>If you need help you have
+<h2>Helpful information to gather prior to contacting MQ Support:</h2>
+<p>Calling in the MQ support group and saying <em><strong>"we have a MQ problem"</strong></em> and having no additional information may not get you very far. <em><strong>If you need help you have
 to ask, so reaching out for help is encouraged</strong></em>. The first time you do this may not go as well as you hope, but with knowledge and experience trouble
-shooting will become easier. </p>
-<p>It is understood that an application support person may not always know all the details of what infrastructure is being used. Perhaps these
-details are buried under ten layers of abstraction or in any number of configuration files. You could be new to the application. 
-The application deployment group could be seperate from the support group. Any number of reasons could contribute to this lack of information.
-At some point these details will likely be needed. It would be good to know how to qet these details if you are going to be supporting the application. </p>
-<h3>What information to have prior to contacting the MQ group?</h3>
+shooting will become easier. If you show patience with the person who may be supporting hundreds of queue managers, they will likely be patient with incomplete 
+information.</p>
+<p>It is understood that an application support person may not always know all the details of what infrastructure is being used. Not
+knowing the details should not be a barrier for reaching out for assistance. It may be a barrier for conclusive answers.</p>
+<h3>Common reasons for not knowing the details:</h3>
 <ol>
-<li><strong>Hostname and TCP/IP port.</strong></li>
-<li><strong>queue manager and queue name(s).</strong></li>
-<li><strong>Time the problem was first noted.</strong></li>
+<li>Application support people are new to the application.</li>
+<li>No access to information or tools. Security related.</li>
+<li>Details hidden in layers of application abstractions.</li>
+<li>Details scattered throughout configuration files or code. </li>
 </ol>
-<p>In some cases host name and port would not be used if you use local bindings. In which case queue manager name and queue will be 
-all you have. Local bindings is not that common, if you use them your application and the MQ you connect to would reside on the same host. 
-If you have contacts for the team that supports the application that services your message that can prove very helplful.</p>
-<h3>Is there anything I can ask of the MQ support group if I don't know the Hostname, port, queue manager and queue?</h3>
-<p>There are questions you can ask that may be revealing, however even if this information can be provide by the MQ support group it
+<p><em>Any number of reasons could contribute to this lack of information. At some point these details will likely be needed. 
+It would be good to know how to qet these details if you are going to be supporting the application.</em></p>
+<h3>What information to gather prior to contacting the MQ group?</h3>
+<ol>
+<li><strong>Hostname.</strong></li>
+<li><strong>TCP/IP port.</strong></li>
+<li><strong>MQ Channel.</strong></li>
+<li><strong>queue manager name.</strong> </li>
+<li><strong>queue name(s).</strong></li>
+<li><strong>Time the problem was first noted.</strong></li>
+<li><strong>MQ Reason Code.</strong></li>
+<li><strong>Application logs, JVM stack trace.</strong></li>
+</ol>
+<p><em>Gather what information you can, don't get stuck trying to find information you can't gather or don't have access to. Problem investigations
+often don't take the most ideal route. As you gain experience, and your tooling improves problem investigation becomes easier.</em></p>
+<h3>Is there anything I can ask of the MQ support group if I don't know the the details of any suspected issue?</h3>
+<p>There are questions you can ask that may be revealing, however even if this information can be provided by the MQ support group it
 may not be conclusive.</p>
 <h3>Questions to ask MQ support when you don't know underlying MQ infrastructure that supports your application:</h3>
 <ol>
@@ -164,16 +177,19 @@ may not be conclusive.</p>
 <li><strong>Are there messages on transmit queues?</strong></li>
 </ol>
 <p>If messages started building up on either transmit or dead letter queues at the same time that the application started 
-having issues this may be a good indicator that these events are related.</p>
-<h2>Something to consider:</h2>
-<p>One thing to note about this is that if queue managers are down for maintenance/patching or if there are transmit queue backups 
-this doesn't mean that your application is affected by this. If the problem goes away after the queue manager is back active or 
-the transmit queues clear, that may be a good indicator it was related, but without knowing what infrastructure your 
-application uses, you won't know for certain.</p>
-<p>Once the MQ environment is back to a fully operational status, issues can clear up. If your issue is resolved without you ever determining the
-details of what infrastructure you use, it would still be wise to learn the details.  If you need an environment that is operational 
-during patching/maintenance windows there are ways to accomodate this requirement from a MQ configuration perspective. The backend application servicing
-the MQ message may have requirements beyond a HA(Highly Available) MQ configuration.</p>
+having issues this may be a good indicator that these events are related. This line of questioning can prove less productive in
+a development environment where the state of application and infrastructure is in a constant state of change.</p>
+<p>Many MQ groups would be hesitant to replay dead-letter messages without application support group confirming their infrastructure and
+understanding how messages ended up on dead-letter queues.</p>
+<h2>Some things to consider about having incomplete information:</h2>
+<p>One thing to note about approaching the MQ support group with incomplete information is that you won't know definitively the 
+root cause of the issue. If the problem goes away after the queue manager is back active or the transmit queues clear, that may be a good indicator it was related. 
+Once the MQ environment is back to a fully operational status, issues can clear up. If your issue is resolved without you ever determining the
+details of what infrastructure you use, it would still be wise to learn the MQ details.</p>
+<h2>Ask for help!</h2>
+<p>Asking for help and knowing what groups to bring to the table when you are having issues will help you provide the service your business expects. 
+Learning the details of how your application uses the infrastructure and getting to the root of issues may reveal options for you to provide a HA(Higly Available) environment.
+Your MQ support group is likely there to assist you with production and development integration challenges.</p>
   </div>
   <div class="tag-cloud">
     <p>
